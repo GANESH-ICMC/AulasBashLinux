@@ -169,7 +169,7 @@ A sua pasta `home` é um bom exemplo pois ele é cheio de arquivos e pastas esco
 
 
 Agora você entende porque esses arquivos são escondidos: a lista é longa.
-Dos elementos que começam por um ponto "." alguns são pastas, outros arquivos. A melhor forma de diferenciar é comparar as cores: as pastas são em azul, o resto tem uma cor por default (branco por exemplo, ou preto).
+Dos elementos que começam por um ponto "." alguns são pastas, outros arquivos. A melhor forma de diferenciar, é comparar as cores: as pastas são em azul, o resto tem uma cor por default (branco por exemplo, ou preto).
 
 Os dois primeiros são um pouco estranhos: "." e "..". O primeiro representa na verdade a pasta atual, e ".." representa a pasta pai, ou seja, a pasta precedente na arborescência. Por exemplo, aqui estou no `home/josuegrace`, ".." representa então a pasta `home`.
 
@@ -179,6 +179,7 @@ Os dois primeiros são um pouco estranhos: "." e "..". O primeiro representa na 
 Esse parâmetro é muito útil para quem não usar a cor no terminal. Ele acrescenta um símbolo no final dos elementos para que se possa fazer uma distinção entre arquivos, pastas, atalhos...
 
 > josuegrace@josuegracestudy:~$ ls -F
+
 	Desktop/  Examples@  images/  log/  tutos/
 
 Com isso, é possível ver que todos são pastas menos `**Examples**` que é um atalho (por causa da presença do `**@**`).
@@ -280,7 +281,7 @@ O arquivo escondido ".xsession-errors" é então o último a ser modificado nest
 Bom, faz muito tempo que estamos só nesta pasta `home` e nós gostaríamos de sair dela.
 O comando que nós vamos estudar aqui se chama `cd`, uma abreviação de *Change Directory* (mudar de pasta). É um comando muito importante que você vai utilisar umas milliares de vezes na sua vida (no mínimo).
 
-Ao contrário do `ls`, o comando `cd` não pega muitos parâmetros porém, apenas um: o nome da pasta dentro do qual você quer ir.
+Ao contrário do `ls`, o comando `cd` não pega muitos parâmetros porém, apenas um: o nome da pasta aonde você quer ir.
 
 Se quisermos ir para raíz, basta digitar `cd /`:
 > josuegrace@josuegracestudy:~$ cd /
@@ -338,15 +339,15 @@ Fazendo isto, nós estamos usando um caminho relativo, ou seja, relativo à past
 
 	bash: cd: games: Arquivo ou diretório não encontrado
 
-Para poder ir no `games`, nós deveríamos primeiro indicar a pasta que a contêm. (`usr`):
+Para poder ir no `games`, nós deveríamos primeiro indicar a pasta que a contém. (`usr`):
 > josuegrace@josuegracestudy:/$ cd usr/games
 
 	josuegrace@josuegracestudy:/usr/games$ cd games
 
-#### Os caminos absolutos
+#### Os caminhos absolutos
 
 Ao contrário dos caminhos relativos, os caminhos absolutos funcionam não importa a pasta onde estamos. Ele é fácil de reconhecer: ele sempre começa pela raíz (`/`). Você deve depois fazer a lista das pastas dentro das quais você que entrar. Por exemplo, supondo que estou na pasta `home/josuegrace` e que eu quero ir para pasta `/usr/games`. Com um caminho absoluto:
-> josuegrace@josuegracestudy:~$ cd usr/games
+> josuegrace@josuegracestudy:~$ cd /usr/games
 
 	josuegrace@josuegracestudy:/usr/games$
 
@@ -364,9 +365,9 @@ Vai ser você que vai ter que escolher cada vez como escrever seu caminho.
 Se você quer voltar no seu repertório `home` pessoal, existem várias opções:
 	* **O jeito bruto**: basta escrever o caminho absoluto inteiro:
 	> josuegrace@josuegracestudy:/usr/games$ cd /home/josuegrace
-
+	
 		josuegrace@josuegracestudy:~$
-
+		
 	* **O jeito esperto**: mais curto e mais prático, você pode usar o apelido `~` que significa a mesma coisa.
 	> josuegrace@josuegracestudy:/usr/games$ cd ~
 
@@ -406,9 +407,8 @@ Há uma lista de pastas que começam com "l"!. Você pode agora refinar sua busc
 O comando "`du`", *Disk Usage* (uso do dísco), dá as informações sobre o tamanho que cada pasta ocupa no seu dísco.
 
 Vá para `/usr/games`, e digite `du`:
-> josuegrace@josuegracestudy:~$ cd /usr/games
+> josuegrace@josuegracestudy:/usr/games$ du
 
-	josuegrace@josuegracestudy:/usr/games$ du
 	5732    .
 
 Como esta pasta não tem subpasta, o comando `du` nos dá o tamanho total de todos arquivos contidos dentro da pasta. Porém, se você vai para `home`, este contêm muitas subpastas. Neste caso, o comando `du` vai retornar o tamanho de cada subpastas, e depois o tamanho total no final ("."):
@@ -448,7 +448,7 @@ Nós vimos esse parâmetro para o comando `ls`. Então ele funciona da mesma for
 
 A minha pasta `home` ocupa então 81 Mb no dísco rigido.
 
-**`-a`: mostar o tamanho das pastas E dos arquivos**
+**`-a`: mostrar o tamanho das pastas E dos arquivos**
 
 Por default, `du` só mostra o tamanho das pastas. Para ter também o tamanho dos arquivos, adicione então a opção `-a` (all):
 > josuegrace@josuegracestudy:~$ du -ah
