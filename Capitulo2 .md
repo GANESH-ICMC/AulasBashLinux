@@ -363,20 +363,21 @@ Vai ser você que vai ter que escolher cada vez como escrever seu caminho.
 #### Voltar ao repertório `home`
 
 Se você quer voltar no seu repertório `home` pessoal, existem várias opções:
-	* **O jeito bruto**: basta escrever o caminho absoluto inteiro:
-	> josuegrace@josuegracestudy:/usr/games$ cd /home/josuegrace
+
+* **O jeito bruto**: basta escrever o caminho absoluto inteiro:	
+> josuegrace@josuegracestudy:/usr/games$ cd /home/josuegrace
 	
-		josuegrace@josuegracestudy:~$
+	josuegrace@josuegracestudy:~$
 		
-	* **O jeito esperto**: mais curto e mais prático, você pode usar o apelido `~` que significa a mesma coisa.
-	> josuegrace@josuegracestudy:/usr/games$ cd ~
+* **O jeito esperto**: mais curto e mais prático, você pode usar o apelido `~` que significa a mesma coisa.
+> josuegrace@josuegracestudy:/usr/games$ cd ~
 
-		josuegrace@josuegracestudy:~$
+	josuegrace@josuegracestudy:~$
 
-	* **O jeito super esperto**: se não colocar nenhum parâmetro no comando `cd`, isto leva diretamente ao repertório pessoal.
-	> josuegrace@josuegracestudy:/usr/games$ cd
+* **O jeito super esperto**: se não colocar nenhum parâmetro no comando `cd`, isto leva diretamente ao repertório pessoal.
+> josuegrace@josuegracestudy:/usr/games$ cd
 
-		josuegrace@josuegracestudy:~$
+	josuegrace@josuegracestudy:~$
 
 #### Autocomplete do caminho
 
