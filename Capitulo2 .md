@@ -207,8 +207,8 @@ Cada coluna tem seu próprio significado. Da esquerda para direita:
 	5. o tamanho do arquivo, em bytes;
 	6. a data da última modificação;
 	7. nome do arquivo (ou pasta).
-
-	> Você vai notar que no caso do atalho (se diz **link símbolico**), o comando precisa para onde aponta o atalho (neste caso /usr/share/example-content).
+	
+> Você vai notar que no caso do atalho (se diz **link símbolico**), o comando precisa para onde aponta o atalho (neste caso /usr/share/example-content).
 
 **`-h`: mostrar o tamanho em Ko, Mo, Go...**
 
