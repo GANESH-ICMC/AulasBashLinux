@@ -1,12 +1,12 @@
 # A estrutura das pastas e dos arquivos
 
-Para começar, as coisas no Linux não funcionam da mesma foma que no Windows. No entanto, saber como ir de pasta em pasta e saber listar os arquivos é muito improtante! Por causa disso, nós vamos juntos o funcionametno dos arquivos a partir de agora.
+Para começar, quero enfatizar que as coisas no Linux não funcionam da mesma forma que no Windows. No entanto, saber como navegar de pasta em pasta e saber como listar os arquivos é muito improtante! Por causa disso, nós vamos estudar juntos o funcionamento dos arquivos a partir de agora.
 
 
 ## Organização das pastas
 --------
 
-O sistema que gerencia os arquivos no Linux é pouco complicado no começo sobretudo quando estamos acostumado com o Windows. Com efeito, aqui você não vai encontrar `C:\`, `D:\` ou algo parecido. Os arquivos são organizados de uma maneira completamente diferente.
+Entender o sistema que gerencia os arquivos no Linux é um pouco complicado no começo sobretudo quando estamos acostumado com o Windows. Com efeito, aqui você não vai encontrar `C:\`, `D:\` ou algo parecido. Os arquivos são organizados de uma maneira completamente diferente.
 
 Em vez de separar cada dísco rígido, leitor de CD, leitor de disquete, leitor de memória...
 O Linux "coloca" meio que tudo no mesmo lugar.
@@ -17,60 +17,60 @@ O Linux "coloca" meio que tudo no mesmo lugar.
 
 Para simplificar, existe dois grandes tipos de arquivos no Linux:
 
-* **os arquivos clássicos** : são os arquivos você sabe, envolve os arquivos de texto (`.txt`, `.doc`, `.odt`...), de som (`.wav`,`.mp3`, `.ogg`), mas também os arquivos de programa. Sumo, tudo isso são arquivos você conhece e encontra no Windows;
+* **os arquivos clássicos** : são os arquivos que você conhece, são envolvidos os arquivos de texto (`.txt`, `.doc`, `.odt`...), de som (`.wav`,`.mp3`, `.ogg`), mas também os arquivos de programa. Em sumo, tudo isso são arquivos que você já conhece e encontra no Windows;
 
-* **os arquivos especias** : alguns arquivos são especias pois **representam** alguma coisa. Por exemplo, o seu leitor de CD é um arquivo para o Linux. Ali onde o Windows faz a diferença entre o que é arquivo e o que não é, Linux, ele, diz que **tudo é arquivo**. É um concepção muito diferente, um pouco bizara, mas não se preocupe, você vai se acostumar isso.
+* **os arquivos especias** : alguns arquivos são especias pois **representam** alguma coisa. Por exemplo, o seu leitor de CD é um arquivo para o Linux. Ali onde o Windows faz a diferença entre o que é arquivo e o que não é, Linux, ele, diz que **tudo é arquivo**. É um concepção muito diferente, um pouco bizara, mas não se preocupe, você vai se acostumar com isso.
 
 #### A Raíz
 
-Num sistema de arquivos, sempre há o que chamamos de raiz, ou seja, "**uma grande pasta de base que contém todos as outras pastas e arquivos**".
+Num sistema de arquivos, sempre há o que chamamos de raiz, ou seja, "**uma grande pasta base que contêm todos as outras pastas e arquivos**".
 
-No Windows, há várias raizes. `C:\`´é a raiz do disco rígido, `D:\`é a raiz de seu leitor de CD (por exemplo).
+No Windows, há várias raízes. `C:\`´é a raiz do disco rígido, `D:\`é a raiz de seu leitor de CD (por exemplo).
 
-No Linux, **há uma e somente uma única raiz** : "`/`". Como você pode ver, não há uma letra para o leitor pois justamente, o Linux não dá nome aos leitores como o Windows faz. Ele apenas fala "**A base, é /**".
+No Linux, **há uma e somente uma única raíz** : "`/`". Como você pode ver, não há uma letra para o leitor pois justamente, o Linux não dá nome aos leitores como o Windows faz. Ele 'simplesmente fala: "**A base, é /**".
 
 #### A arquitetura das pastas
 
 No Windows, uma pasta pode ser representada da maneira seguinte:
-`C:\Program Files\Winzip`. Podemos dizer que `Winzip`é uma subpasta da pasta  `Program Files`, que ela mesma está na raiz.
+`C:\Program Files\Winzip`. Podemos dizer que `Winzip`é uma subpasta da pasta  `Program Files`, que ela mesma está na raíz.
 
-Você notar que é a barra invertida `\` (também chamado de *backslash*) que serve de separador aos nomes das pastas.
+Você vai notar que é a barra invertida `\` (também chamado de *backslash*) que serve de separador aos nomes das pastas.
 
-No Linux, é ao contrário o `/`que serve de separador. Como já dizemos, não há um `C:`no Linux, a raiz (o começo) se chama apenas `/`.
+No Linux, é ao contrário o `/`que serve de separador. Como já dizemos, não há um `C:`no Linux, a raíz (o começo) se chama apenas `/`.
 
-A pasta do nosso superprograma se pareceria à alguma coisa como: `/usr/bin/`. Dizemos que `bin`é uma subpasta da pasta `usr`,que ele mesmo está na raiz.
+A pasta do nosso superprograma se pareceria à alguma coisa como: `/usr/bin/`. Dizemos que `bin`é uma subpasta da pasta `usr`,que ela mesma está na raíz.
 
-> O Linux gerencia sem problemas os nomes dos arquivos contendo espaços, acentos e letras maiúsulas. No entanto, você enontrará mais nomes em minúsculas sem acentos nem espaços, como `usr`, `bin`,`apache`, etc. Lembre que você não está obrigado a seguir a mema regra, mas a maioria dos programas que você isntalar prefere usar nomes em minúsculo sem espaços nem acentos.
+> O Linux gerencia sem problemas os nomes dos arquivos contendo espaços, acentos e letras maiúsulas. No entanto, você enontrará mais nomes em minúsculo sem acentos nem espaços, como `usr`, `bin`,`apache`, etc. Lembre que você não está obrigado a seguir a mema regra mas, a maioria dos programas que você instalar preferem usar nomes em minúsculo sem espaços nem acentos.
 
 #### As pastas da raiz
 
 No Windows, nós geralmente achamos as mesmas pastas na raiz:
-`Docuemnts and Settings, Program Files, Windows`...
-No Linux, as pastas são completamente diferentes. Nós vamos aqui uma breve e rápida lista das pastas mais comuns que sempre se encontram na raiz do Linux. Não é necessário decorar essa lista. Use a caso você queira saber o que é cada coisa.
+`Documents and Settings, Program Files, Windows`...
+No Linux, as pastas são completamente diferentes. Nós vamos aqui dar uma breve e rápida lista das pastas mais comuns que sempre se encontram na raíz do Linux. Não é necessário decorar essa lista. Use-a caso você queira saber o que é cada coisa.
 
 * **bin** : contém os arquivos de programas (os executáveis) que vão ser usados por todos os usuários da máquina.
-* **boot** : arquivos que permitem o Linux inicialiar.
-* **dev** : arquivos que contêm os periféricos. Suas subpastas representam cada uma um periférico. Assim, você por exemplo encontrar dentro dele o arquivo que representa o leitor de CD.
+* **boot** : arquivos que permitem o Linux inicializar.
+* **dev** : arquivos que contêm os periféricos. Suas subpastas representam cada uma um periférico. Assim, você por exemplo vai encontrar dentro dela o arquivo que representa o leitor de CD.
 * **etc** : arquivos de configuração.
-* **home** : repertórios pessoias. È aqui que você vai encontrar seus arquivos pessoais, um pouco como o meus documentos do Windows.
+* **home** : repertórios pessoais. É aqui que você vai encontrar seus arquivos pessoais, um pouco como o meus documentos do Windows.
 
 Cada usuário do computador possui uma pasta pessoal. Por exemplo, no meu caso a minha pasta pessoal se encontra no `/home/josuegrace/.`Se tivesse um outro usúario (chamamos ele de matheus) no meu computador, ele teria também uma pasta própria a ele: `/home/matheus/.`
 * **lib** : pastas que contêm as bibliotecas compartilhadas (geralmente os arquivos `.so`) usados pelos programas. Esses arquivos são meio que o equivalente dos arquivos `.dll` do Windows.
-* **media** : quando um dispositivo removível (como uma carta de memória SD ou uma chave USB) foi inserida no computador, o Linux permite o accessar a través da subpasta `media`. Isto se chama montagem.
+* **media** : quando um dispositivo removível (como uma carta de memória SD ou uma chave USB) foi inserida no computador, o Linux permite accessá-lo a través da subpasta `media`. Isto se chama montagem.
 * **mnt** : é parecido com o `media`, porém por um uso temporário.
 * **opt** : repertório usado para os *add-ons* dos programas.
 * **proc** : contêm as informações do sistema.
 * **root** : é a pasta pessoal do usúario "root", o super-usúario da máquina.
 * **sbin** : contêm os progamas importantes do sistema.
-* **tmp** : pasta temporária usados pelos programas para armazenar arquivos.
-* **usr** : é uma das maiores pastas, dentro do qual serão instaladas a maioria dos programas do usúario.
+* **tmp** : pasta temporária usado pelos programas para armazenar arquivos.
+* **usr** : é uma das maiores pastas, dentro da qual será instalada a maioria dos programas do usúario.
 * **var** : essa pasta contêm os "*logs*" do funcionamento da máquina.
 
 #### Diagrama da arquitetura
 
 (incluir imagem aqui).
 
-A raiz em cima é o `/`. Ela possui várias pastas que contêm várias pastas que por sua vez contêm outras pastas e arquivos, etc.
+A raiz em cima é o `/`. Ela possui várias pastas que contêm várias pastas que por suas vezes contêm outras pastas e arquivos, etc.
 
 ## pwd & which : onde estou ?
 ------
@@ -88,7 +88,7 @@ Normalmente, o prompt de comando indica o nome da pasta onde estamos:
 
 Se você está se lembrando bem, o nome da pasta está entre o ":" e o "$". Então aqui estamos dentro da pasta "`~`", que significa a nossa pasta pessoal.
 
-Essa indicação do prompt de comando é muito prático porém, é bom saber que existe um outro meio de saber o nome da pasta atual. É o comando **`pwd`**. `pwd`é a abreviação de "Print Working Directory", ou seja, "mostra a pasta atual".
+Essa indicação do prompt de comando é muito prático porém, é bom saber que existe um outro meio de saber o nome da pasta atual. É o comando **`pwd`**. `pwd`é a abreviação de "Print Working Directory", ou seja, "mostre a pasta atual".
 
 É um comando muito simples que não pega nenhum parâmetro. Você pode testar.
 > joesuegrace@josuegracestudy:~$ pwd
@@ -97,9 +97,9 @@ Essa indicação do prompt de comando é muito prático porém, é bom saber que
 
 **`which`: saber a localizaçao de um certo comando**
 
-O que faz este comando ? Ela permite localizar a posição de um programa correspondente a um comando.
+O que faz este comando ? Ele permite localizar a posição de um programa correspondente a um comando.
 
-*Um comando não é nada mais que um outro programa que podemos chamar a qualquer momento e qualquer lugar dentro do console.*
+*Um comando não é nada mais que um outro programa que podemos chamar a qualquer momento e em qualquer lugar dentro do console.*
 
 O comando `which`pega um parâmetro: o nome do comando que você quer saber a localização.
 
@@ -108,9 +108,9 @@ Vamos testar:
 
 	/bin/pwd
 
-`pwd`se encontra então na pasta `/bin/`! O "pwd" no final não é o nome de uma pasta porém, do nome do programa em si.
+`pwd`se encontra então na pasta `/bin/`! O "pwd" no final não é o nome de uma pasta porém, o do programa em si.
 
-> Você vai notar que os programas no Linux em geral não têm extensão > (enquanto no Windows a extensão mais usada em geral é o `.exe`).
+> Você vai notar que os programas no Linux em geral não têm extensão (no Windows a extensão mais usada em geral é o `.exe`).
 
 Todos os programas não estão colocados numa mesma pasta. Teste por exemplo o comando `which`!
 Nós vamos então digitar `which which` no terminal.
@@ -122,7 +122,7 @@ Desta vez o programa não se encontra na pasta `/bin` porém na pasta `/usr/bin`
 
 ## `ls`: listar os arquivos e as pastas
 -----
-`ls` é um dos comandos que nós usamos no capítulo precedente. Aqui nós vamos enterar mais em detalhes do seu funcionamento (e de seus vários parâmetros...)
+`ls` é um dos comandos que nós usamos no capítulo precedente. Aqui nós vamos entrar mais em detalhes no seu funcionamento (e de seus vários parâmetros...)
 
 Comecemos por digitar "ls" sem parâmetro dentro da nossa pasta pessoal.
 > josuegrace@josuegracestudy:~$ ls
@@ -131,7 +131,7 @@ Comecemos por digitar "ls" sem parâmetro dentro da nossa pasta pessoal.
 
 O Ubuntu ativa a coloração dos arquivos e das pastas por default, você deveria então ver tudo colorido. As pastas aparecem em azul escuro. Você poderá notar que a pasta `Examples` está em azul claro: isto significa que é um atalho para uma pasta que está em outro lugar no disco.
 
-> Se a cor não aparecer, você pode adicionar o parâmetro `--color=auto`, > assim: `ls --color=auto`. Se ao contrário você não quer ter cor, use o > parâmetro `--color=none`.
+> Se a cor não aparecer, você pode adicionar o parâmetro `--color=auto`, assim: `ls --color=auto`. Se ao contrário você não quer ter cor, use o parâmetro `--color=none`.
 
 O comando `ls` aceita um grande número de parâmetros. Não é viável citar todos aqui; no entanto, nós vamos descobrir os parâmetros mais úteis. Isto vai te treinar a usar e combinar comandos.
 
@@ -169,13 +169,13 @@ A sua pasta `home` é um bom exemplo pois ele é cheio de arquivos e pastas esco
 
 
 Agora você entende porque esses arquivos são escondidos: a lista é longa.
-Dentro dos elementos que começam por um ponto "." são pastas, outros arquivos. A melhor forma de diferenciar é de comparar as cores: as pastas são em azul, o resto tem uma cor por default (branco por exemplo, ou preto).
+Dos elementos que começam por um ponto "." alguns são pastas, outros arquivos. A melhor forma de diferenciar é comparar as cores: as pastas são em azul, o resto tem uma cor por default (branco por exemplo, ou preto).
 
 Os dois primeiros são um pouco estranhos: "." e "..". O primeiro representa na verdade a pasta atual, e ".." representa a pasta pai, ou seja, a pasta precedente na arborescência. Por exemplo, aqui estou no `home/josuegrace`, ".." representa então a pasta `home`.
 
-> O parâmetro `-A` (a maíusculo) tem o mesmo significado: ele lista a mesma > coisa menos os elementos "." e "..". Tome cuidado letras maíusculas.
+> O parâmetro `-A` (a maíusculo) tem o mesmo significado: ele lista a mesma coisa menos os elementos "." e "..". Tome cuidado com as letras maíusculas!
 
-**`-F`: indicar o tipo de elemento**
+**`-F`: indicar o tipo do elemento**
 Esse parâmetro é muito útil para quem não usar a cor no terminal. Ele acrescenta um símbolo no final dos elementos para que se possa fazer uma distinção entre arquivos, pastas, atalhos...
 
 > josuegrace@josuegracestudy:~$ ls -F
@@ -201,7 +201,7 @@ Cada coluna tem seu próprio significado. Da esquerda para direita:
 
 	1. direitos sobre o arquivo (teremos um capítulo inteiro explicando o funcionamento dos direitos no Linux);
 	2. número de links físicos;
-	3. nome do proprietário do arquivo (aqui no caso sou eu!). Se o arquivo fosse criado por uma outra pessoa, patrcik por exemplo, o seu nome apareceria no lugar do meu;
+	3. nome do proprietário do arquivo (aqui no caso sou eu!). Se o arquivo fosse criado por uma outra pessoa, patrick por exemplo, o seu nome apareceria no lugar do meu;
 	4. grupo no qual pertence o arquivo (falaremos disto no capítulo sobre os direitos). É possível que o nome do grupo seja o mesmo que o do proprietário;
 	5. o tamanho do arquivo, em bytes;
 	6. a data da última modificação;
@@ -211,7 +211,7 @@ Cada coluna tem seu próprio significado. Da esquerda para direita:
 
 **`-h`: mostrar o tamanho em Ko, Mo, Go...**
 
-Quando se faz um `ls -l`, o tamanho aparece em bytes. O problema é que às vezes não legível. Por exemplo:
+Quando se faz um `ls -l`, o tamanho aparece em bytes. O problema é que às vezes não é legível. Por exemplo:
 > josuegrace@josuegracestudy:~$ ls -l
 
 	total 9500
